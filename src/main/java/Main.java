@@ -4,16 +4,27 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-   int liczba = 1;
+  
+        for (int i = 0; i < 6; i++) {
 
-    while(liczba<101)
-      {
-        if(liczba%2==0)
-        {
-          System.out.println(liczba);
+            
+            for (int j = 0; j < 6 - i -1; j++) {
+                System.out.print(" ");
+            }
+
+            for (int k = 0; k < (2 * i + 1); k++) {
+                System.out.print("*");
+            }            System.out.println();
         }
-        liczba++;
-      }
+
+        int wysokoscPnia = 2;
+        for (int i = 0; i < wysokoscPnia; i++) {
+            for (int j = 0; j < 6 - 1; j++) {
+                System.out.print(" ");
+            }
+            System.out.println("#");
+        }
+    
 
       
       
